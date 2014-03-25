@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 
-Sitemap: http://www.accidentalarchitect.co.uk/sitemap.xml 
+Sitemap: http://mcsnootch.github.io/sitemap.xml 

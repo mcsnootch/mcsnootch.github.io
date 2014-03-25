@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Accidentally Architecting]]></title>
-  <link href="http://www.accidentalarchitect.co.uk/atom.xml" rel="self"/>
-  <link href="http://www.accidentalarchitect.co.uk/"/>
-  <updated>2014-03-25T22:43:01+00:00</updated>
-  <id>http://www.accidentalarchitect.co.uk/</id>
+  <link href="http://mcsnootch.github.io/atom.xml" rel="self"/>
+  <link href="http://mcsnootch.github.io/"/>
+  <updated>2014-03-25T23:22:19+00:00</updated>
+  <id>http://mcsnootch.github.io/</id>
   <author>
     <name><![CDATA[James Roberts]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Datbase schema migrations and Dropwizard]]></title>
-    <link href="http://www.accidentalarchitect.co.uk/blog/2014/03/25/database-migrations-and-dropwizard/"/>
+    <link href="http://mcsnootch.github.io/blog/2014/03/25/database-migrations-and-dropwizard/"/>
     <updated>2014-03-25T22:10:18+00:00</updated>
-    <id>http://www.accidentalarchitect.co.uk/blog/2014/03/25/database-migrations-and-dropwizard</id>
+    <id>http://mcsnootch.github.io/blog/2014/03/25/database-migrations-and-dropwizard</id>
     <content type="html"><![CDATA[<p>One of the problems with writing applications backed by a datastore is that the metadata describing the datastore (DDL in the SQL world) needs to be applied to the datastore in step with the code which accesses that store. Previous versions of the application code may work well with a more advanced version of the schema, but a newer version of your code almost certainly won&rsquo;t work well with an old version of your database.</p>
 
 <!-- more -->
@@ -38,16 +38,14 @@
 
 <p>I&rsquo;ve really been enjoying developing applications with Dropwizard, and amongst it&rsquo;s many lovely features are support for migrations using Liquibase. Unfortunately, it&rsquo;s default migration commands don&rsquo;t run as the server starts up and need to be explicitly called outside of application startup. We could try chucking the migration command into our deployment scripts, but this feels inelegant, or we could skip using Dropwizard&rsquo;s liquibase support and roll our own, parsing or duplicating our application&rsquo;s database configuration ourselves. If you&rsquo;re lazy like me, though, and appreciate the idea of someone else loading config, providing a conventional location for the migration code and all that jazz, here&rsquo;s how to borrow Dropwizard&rsquo;s migration command and reuse it for your own purpose:</p>
 
-<p>   public void run()
-   {</p>
+<pre><code>  @Override
+  public void run(YourServiceConfig config, Environment environment) throws Exception {
+     ManagedLiquibase liquibase = new ManagedLiquibase(config.getDatabaseConfiguration());
+     liquibase.update("");
 
-<pre><code>  ManagedLiquibase liquibase = new ManagedLiquibase( config.getDatabaseConfiguration() );
-  liquibase.update();
-
-  // other initialisation
+     // other setup and wiring here
+  }
 </code></pre>
-
-<p>   }</p>
 
 <p>and that&rsquo;s all there is to it. Starting your Dropwizard application should now migrate your schema to to application appropriate version, without your having to lift a finger.</p>
 <div class="footnotes">
