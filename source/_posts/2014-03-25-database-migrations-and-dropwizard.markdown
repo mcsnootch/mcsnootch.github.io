@@ -22,13 +22,13 @@ These are all objectively horrible solutions to the problem that our application
 
 I've really been enjoying developing applications with Dropwizard, and amongst it's many lovely features are support for migrations using Liquibase. Unfortunately, it's default migration commands don't run as the server starts up and need to be explicitly called outside of application startup. We could try chucking the migration command into our deployment scripts, but this feels inelegant, or we could skip using Dropwizard's liquibase support and roll our own, parsing or duplicating our application's database configuration ourselves. If you're lazy like me, though, and appreciate the idea of someone else loading config, providing a conventional location for the migration code and all that jazz, here's how to borrow Dropwizard's migration command and reuse it for your own purpose:
 
-   public void run()
-   {
-      ManagedLiquibase liquibase = new ManagedLiquibase( config.getDatabaseConfiguration() );
-      liquibase.update();
+      @Override
+      public void run(YourServiceConfig config, Environment environment) throws Exception {
+         ManagedLiquibase liquibase = new ManagedLiquibase(config.getDatabaseConfiguration());
+         liquibase.update("");
 
-      // other initialisation
-   }
+         // other setup and wiring here
+      }
 
 and that's all there is to it. Starting your Dropwizard application should now migrate your schema to to application appropriate version, without your having to lift a finger.
 
