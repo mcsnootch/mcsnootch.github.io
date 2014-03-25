@@ -2,10 +2,10 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://mcsnootch.github.io
-title: My Octopress Blog
-subtitle: A blogging framework for hackers.
-author: Your Name
+url: http://www.accidentalarchitect.co.uk
+title: Accidentally Architecting 
+subtitle: Hack. Refactor. Emergence
+author: James Roberts 
 simple_search: https://www.google.com/search
 description:
 
@@ -94,7 +94,7 @@ disqus_short_name:
 disqus_show_comment_count: false
 
 # Google Analytics
-google_analytics_tracking_id:
+google_analytics_tracking_id: UA-49379309-1
 
 # Facebook Like
 facebook_like: false
