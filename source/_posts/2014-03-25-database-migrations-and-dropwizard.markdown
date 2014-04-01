@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Datbase schema migrations and Dropwizard"
+title: "Database schema migrations and Dropwizard"
 date: 2014-03-25 22:10:18 +0000
 comments: true
 categories: 
