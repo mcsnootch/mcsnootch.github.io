@@ -4,7 +4,7 @@
   <title><![CDATA[Accidentally Architecting]]></title>
   <link href="http://mcsnootch.github.io/atom.xml" rel="self"/>
   <link href="http://mcsnootch.github.io/"/>
-  <updated>2014-03-26T21:53:52+00:00</updated>
+  <updated>2014-04-01T10:10:16+01:00</updated>
   <id>http://mcsnootch.github.io/</id>
   <author>
     <name><![CDATA[James Roberts]]></name>
@@ -14,7 +14,7 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Datbase schema migrations and Dropwizard]]></title>
+    <title type="html"><![CDATA[Database schema migrations and Dropwizard]]></title>
     <link href="http://mcsnootch.github.io/blog/2014/03/25/database-migrations-and-dropwizard/"/>
     <updated>2014-03-25T22:10:18+00:00</updated>
     <id>http://mcsnootch.github.io/blog/2014/03/25/database-migrations-and-dropwizard</id>
