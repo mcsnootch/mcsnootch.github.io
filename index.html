@@ -9,7 +9,8 @@
 
 <meta name="author" content="James Roberts"> 
 
-<meta name="description" content="One of the problems with writing applications backed by a datastore is that the metadata describing the datastore (DDL in the SQL world) needs to be &hellip;"> <meta name="keywords" content="">
+<meta name="description" content="JDBI is a pretty neat framework for a light-touch integration with JDBC in your application.
+t&rsquo;s SQL Object API lets you annotate an interface &hellip;"> <meta name="keywords" content="">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -94,6 +95,59 @@ $(document).ready(
 </header>
 
 	<div id="content" class="inner">
+
+
+    <article class="post">
+	<h2 class="title">
+		
+		<a href="/blog/2014/06/19/jdbi-oracle-and-null/">
+		
+			JDBI, Oracle and Null</a>
+	</h2>
+	<div class="entry-content">
+		<p><a href="http://jdbi.org">JDBI</a> is a pretty neat framework for a light-touch integration with JDBC in your application.
+t&rsquo;s SQL Object API lets you annotate an interface with straight SQL queries like so:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="kd">interface</span> <span class="nc">FooDao</span> <span class="o">{</span>
+</span><span class='line'>   <span class="nd">@SqlInsert</span><span class="o">(</span> <span class="s">&quot;insert into bar values (:foo)&quot;</span> <span class="o">)</span>
+</span><span class='line'>   <span class="kd">public</span> <span class="kt">void</span> <span class="nf">insert</span><span class="o">(</span> <span class="nd">@Bind</span><span class="o">(</span><span class="s">&quot;foo&quot;</span><span class="o">)</span> <span class="n">String</span> <span class="n">foo</span> <span class="o">);</span>
+</span><span class='line'><span class="o">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>then get dbi to create you an instance of this dao which will magically prepare and execute the statements you&rsquo;ve bound to the methods in the interface.</p>
+
+<p>But try supplying null as a parameter to your dao, and you&rsquo;ll get a nasty surprise:</p>
+
+
+		
+		<a href="/blog/2014/06/19/jdbi-oracle-and-null/" class="more-link">Read on &rarr;</a>
+	</div>
+
+
+<div class="meta">
+	<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-06-19T15:59:43+01:00" pubdate data-updated="true">Jun 19<span>th</span>, 2014</time></div>
+	
+
+
+	
+</div></article>
 
 
     <article class="post">
