@@ -1,0 +1,54 @@
+=================================================================
+https://keybase.io/mcsnootch
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://www.accidentalarchitect.co.uk
+  * I am mcsnootch (https://keybase.io/mcsnootch) on keybase.
+  * I have a public key ASC-Co5EhBlQwmR0AkU-ybaPQCsYktsFcum170iv8_dEkQo
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0120be0a8e44841950c2647402453ec9b68f402b1892db0572e9b5ef48aff3f744910a",
+            "host": "keybase.io",
+            "kid": "0120be0a8e44841950c2647402453ec9b68f402b1892db0572e9b5ef48aff3f744910a",
+            "uid": "6b7afdfb97396f947d7a6320a2e80b19",
+            "username": "mcsnootch"
+        },
+        "service": {
+            "hostname": "www.accidentalarchitect.co.uk",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "client": {
+        "name": "keybase.io go client",
+        "version": "1.0.14"
+    },
+    "ctime": 1458863851,
+    "expire_in": 504576000,
+    "merkle_root": {
+        "ctime": 1458863749,
+        "hash": "8ac45c82c8fd5679eaeb20216392111f885226f05890e394c7bd062be0eb66afbc0b7977e3459ee47a6ad1f4faecaee657089d78b8b710a07a6c086a8177c5d8",
+        "seqno": 421143
+    },
+    "prev": "6048ab54a48eecc5e7f5c77653925ab163bdb07b217028f7c0c5846afa2daed3",
+    "seqno": 9,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+g6Rib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgvgqORIQZUMJkdAJFPsm2j0ArGJLbBXLpte9Ir/P3RJEKp3BheWxvYWTFAwV7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwYmUwYThlNDQ4NDE5NTBjMjY0NzQwMjQ1M2VjOWI2OGY0MDJiMTg5MmRiMDU3MmU5YjVlZjQ4YWZmM2Y3NDQ5MTBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwYmUwYThlNDQ4NDE5NTBjMjY0NzQwMjQ1M2VjOWI2OGY0MDJiMTg5MmRiMDU3MmU5YjVlZjQ4YWZmM2Y3NDQ5MTBhIiwidWlkIjoiNmI3YWZkZmI5NzM5NmY5NDdkN2E2MzIwYTJlODBiMTkiLCJ1c2VybmFtZSI6Im1jc25vb3RjaCJ9LCJzZXJ2aWNlIjp7Imhvc3RuYW1lIjoid3d3LmFjY2lkZW50YWxhcmNoaXRlY3QuY28udWsiLCJwcm90b2NvbCI6Imh0dHA6In0sInR5cGUiOiJ3ZWJfc2VydmljZV9iaW5kaW5nIiwidmVyc2lvbiI6MX0sImNsaWVudCI6eyJuYW1lIjoia2V5YmFzZS5pbyBnbyBjbGllbnQiLCJ2ZXJzaW9uIjoiMS4wLjE0In0sImN0aW1lIjoxNDU4ODYzODUxLCJleHBpcmVfaW4iOjUwNDU3NjAwMCwibWVya2xlX3Jvb3QiOnsiY3RpbWUiOjE0NTg4NjM3NDksImhhc2giOiI4YWM0NWM4MmM4ZmQ1Njc5ZWFlYjIwMjE2MzkyMTExZjg4NTIyNmYwNTg5MGUzOTRjN2JkMDYyYmUwZWI2NmFmYmMwYjc5NzdlMzQ1OWVlNDdhNmFkMWY0ZmFlY2FlZTY1NzA4OWQ3OGI4YjcxMGEwN2E2YzA4NmE4MTc3YzVkOCIsInNlcW5vIjo0MjExNDN9LCJwcmV2IjoiNjA0OGFiNTRhNDhlZWNjNWU3ZjVjNzc2NTM5MjVhYjE2M2JkYjA3YjIxNzAyOGY3YzBjNTg0NmFmYTJkYWVkMyIsInNlcW5vIjo5LCJ0YWciOiJzaWduYXR1cmUifaNzaWfEQElMyvwm/VH041FSML0F88ltQY+aLrLqa0K+crfYHITEs+SQi018sLAdnMWokGdhEMAULt9b5TXVFytnOomZIwqoc2lnX3R5cGUgo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/mcsnootch
+
+==================================================================
